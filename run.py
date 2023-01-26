@@ -74,8 +74,8 @@ def run(
     else:
         add_bookmarks(
             mst,
-            posts,
-            boosts
+            threshold_posts,
+            threshold_boosts
         )
 
 if __name__ == "__main__":
