@@ -1,7 +1,7 @@
 name: update the feed 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 4,10,16,22 * * *'
   workflow_dispatch:
 jobs:
   update:
@@ -25,4 +25,4 @@ jobs:
           MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
           MASTODON_BASE_URL: ${{ secrets.MASTODON_BASE_URL }}
         run: |
-          python run.py -n 6 -s SimpleWeighted -t lax
+          python run.py -n 12 -s SimpleWeighted -t lax
