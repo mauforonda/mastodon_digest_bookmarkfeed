@@ -60,10 +60,10 @@ def run(
 
     # 3. Sort posts and boosts by score, descending
     threshold_posts = sorted(
-        threshold_posts, key=lambda post: post.get_score(scorer), reverse=True
+        threshold_posts, key=lambda post: post.get_score(scorer)
     )
     threshold_boosts = sorted(
-        threshold_boosts, key=lambda post: post.get_score(scorer), reverse=True
+        threshold_boosts, key=lambda post: post.get_score(scorer)
     )
 
     # 4. Build the digest
@@ -74,8 +74,8 @@ def run(
     else:
         add_bookmarks(
             mst,
-            threshold_posts,
-            threshold_boosts
+            threshold_boosts,
+            threshold_posts
         )
 
 if __name__ == "__main__":
