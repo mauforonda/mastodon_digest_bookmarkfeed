@@ -1,4 +1,4 @@
-name: update the feed 
+name: Mastodon Bookmark Feed 
 on:
   schedule:
     - cron: '0 4,10,16,22 * * *'
